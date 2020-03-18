@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Madlibs form</title>
+  </head>
+<body>
+  <form action="/story">
+    {% for input in answers %}
+    <label name = {{input}} > {{input}} 
+    <input type ="text" name= {{input}}></label>
+    <br>
+    {% endfor %}
+    <input type = "submit">
+  </form>
+</body>
+</html>
